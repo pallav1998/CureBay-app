@@ -27,22 +27,6 @@ A responsive health vitals tracker built with **React**, **Tailwind CSS**, and *
 
 ---
 
-## 📦 Installation & Setup
-
-```bash
-# 1. Clone the repository
-git clone https://github.com/your-username/curebay-vitals-dashboard.git
-cd curebay-vitals-dashboard
-
-# 2. Install dependencies
-npm install
-
-# 3. Start development server
-npm start
-```
-
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
 ## 🧩 Project Structure
 
 ```bash
@@ -59,3 +43,21 @@ src/app/
  ├── page.js            # Main page entry point
  └── utils.js           # Utility functions (random data, helpers)
 ```
+
+---
+
+## 📦 Installation & Setup
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/your-username/curebay-vitals-dashboard.git
+cd curebay-vitals-dashboard
+
+# 2. Install dependencies
+npm install
+
+# 3. Start development server
+npm start
+```
+
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
