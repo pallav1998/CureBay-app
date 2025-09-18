@@ -1,36 +1,61 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# CureBay Health Vitals Dashboard
 
-## Getting Started
+A responsive health vitals tracker built with **React**, **Tailwind CSS**, and **Recharts**. Users can log vitals such as heart rate, blood pressure, oxygen levels, temperature, and weight, visualize trends over time, and receive alerts for abnormal readings.
 
-First, run the development server:
+🔗 **Live Demo:** [https://curebay-app.vercel.app/](https://curebay-app.vercel.app/)
+
+---
+
+## 🚀 Features
+
+- 📊 **Interactive Charts** — Visualize Heart Rate, Blood Pressure, SpO₂, and BMI trends.
+- 📝 **Add Data** — Manually enter vitals sample readings.
+- 🔔 **Anomaly Detection** — Get alerts for high BP, high heart rate, low SpO₂, and fever.
+- 🗂 **History View** — Review past logs with timestamped entries.
+- 💾 **Persistent Storage** — Saves data locally using `localStorage`.
+- 📱 **Responsive Design** — Works seamlessly across devices.
+
+---
+
+## 🛠️ Tech Stack
+
+- **React/Nextjs** (Create Next App)
+- **Tailwind CSS** (styling)
+- **Recharts** (data visualization)
+- **Day.js** (date handling)
+- **LocalStorage** (data persistence)
+
+---
+
+## 📦 Installation & Setup
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# 1. Clone the repository
+git clone https://github.com/your-username/curebay-vitals-dashboard.git
+cd curebay-vitals-dashboard
+
+# 2. Install dependencies
+npm install
+
+# 3. Start development server
+npm start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 🧩 Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+src/app/
+ ├── Components/        # UI Components
+ │    ├── AlertsList.jsx        # Displays alerts for abnormal vitals
+ │    ├── HistoryList.jsx       # Shows history of logged vitals
+ │    ├── VitalsCharts.jsx      # Recharts graphs for trends
+ │    ├── VitalsFormModal.jsx   # Modal to add new vitals
+ │    └── VitalsOverview.jsx    # Summary of all vitals at a glance
+ │
+ ├── globals.css        # Global Tailwind and custom styles
+ ├── layout.js          # Root layout file (Next.js App Router)
+ ├── page.js            # Main page entry point
+ └── utils.js           # Utility functions (random data, helpers)
+```
